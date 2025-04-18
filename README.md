@@ -16,8 +16,8 @@ Therefore, I reformulate the objective as to gain the maximum insulation, e.g. m
 
 For explenation purpose, I use both signs [] and {} with combined definitions in logics in Math and the programming language Python.
 
-- invest: the total renovation investment costs
-- Kosten_ges | Wärmeverlust_kosten: heat loss costs for each insulation material after 20 years of usage
+- Inv : the total renovation investment costs
+- Hlc | Wärmeverlust_kosten: heat loss costs for each insulation material after 20 years of usage
 - Kij | Kosten_material: the cost for each renovation measure j and building element i
 - n | rows | number of data inputs | df.shape[0]: total number of building elements
 - m | options: the maximum count of measures over all building elements for a normalized problem Here is an explenation:
@@ -54,7 +54,9 @@ For explenation purpose, I use both signs [] and {} with combined definitions in
 To grafically present the problem, here is an example of possible measures for a set of building components.
 ![Renovation project - Presentation example with four building components](<resources/renovation for a building - diagram.jpg>)
 
-We formulate the problem as follows:
+The deduction of the values of Hlc for each insulation material and building component can be done after heat loss calculations with the norm [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587).
+
+
 
 ## Credits
 
