@@ -17,8 +17,8 @@ Therefore, I reformulate the objective as to gain the maximum insulation, e.g. m
 For explenation purpose, I use both signs [] and {} with combined definitions in logics in Math and the programming language Python.
 
 - Inv: the total renovation investment costs
-- Hlc: heat loss costs for each insulation material after 20 years of usage (In German: Wärmeverlustkosten)
-- Kij: the cost for each renovation measure j and building element i (Materialkosten)
+- Hij: heat loss costs for each insulation material after 20 years of usage for each renovation measure j and building element i (In German: Wärmeverlustkosten)
+- Kij: the material costs for each renovation measure j and building element i (Materialkosten)
 - n: total number of building elements
 - m: the maximum count of measures over all building elements for a normalized problem Here is an explenation:
 
@@ -52,10 +52,14 @@ For explenation purpose, I use both signs [] and {} with combined definitions in
 ## Study case
 
 To grafically present the problem, here is an example of possible measures for a set of building components.
+
 ![Renovation project - Presentation example with four building components](<resources/renovation for a building - diagram.jpg>)
 
 The deduction of the values of Hlc for each insulation material and building component can be done after heat loss calculations with the norm [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587).
 
+The problem is solved as follows:
+- as
+- Minimize the product "heat loss costs" (Hij) times "material costs" (Kij) for each building component and insulation material.
 
 
 ## Credits
