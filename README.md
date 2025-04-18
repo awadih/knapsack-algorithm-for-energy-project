@@ -10,7 +10,7 @@ An energy consultant may have many choices for each building component, taking i
 ## Study case
 
 To grafically present the problem, here is an example of possible measures for a set of building components.
-![Renovation project - Presentation example with four building components](https://raw.githubusercontent.com/awadih/knapsack-algorithm-for-energy-project/refs/heads/main/resources/renovation%20for%20a%20building%20-%20diagram.jpg?token=GHSAT0AAAAAADCDUCQRG2ZSP4FMFQFXMDO62ACJDUQ)
+![Renovation project - Presentation example with four building components](<resources/renovation for a building - diagram.jpg>)
 
 We formulate the problem as follows:
 
