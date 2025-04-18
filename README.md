@@ -8,6 +8,10 @@ The developement & application of this greedy algorithm have raised as I had the
 An energy consultant may have many choices for each building component, taking into account many factors such as the varying price of the insulation material in the markt, I give with this code an automated solution to possible biases.
 
 ## Study case
+
+To grafically present the problem, here is an example of possible measures for a set of building components.
+
+
 We formulate the problem as follows:
 
 ## Credits
