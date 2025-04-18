@@ -9,7 +9,45 @@ An energy consultant assesses the building insulation, sets the requirements, bu
 Therefore, I reformulate the objective as to gain the maximum insulation, e.g. minimum heat loss costs, for the whole building while investing a given money amount.
 
 ## Conditions
-To take into account the rate of depreciation, I set hereafter the lifespan of the building renovation project with 20 years. The assessement considers then heat losses after 20 years of usage for each insulation material. On the other hand, many other factors such as the varying price of the insulation material in the markt, I give with this code an automated solution to possible biases.
+- To take into account the rate of depreciation, I set hereafter the lifespan of the building renovation project with 20 years. The assessement considers then heat losses after 20 years of usage for each insulation material. On the other hand, many other factors such as the varying price of the insulation material in the markt, I give with this code an automated solution to possible biases.
+- The renovation of a building element can be left out, limitation either due to no sufficient investment amount or because the impact of leaving the building element without any renovation is irrelevant. In the code, we can have as a result: (number of renovated elements) counter < (total number of building elements) df.shape[0]
+
+## Nomenclature
+
+For explenation purpose, I use both signs [] and {} with combined definitions in logics in Math and the programming language Python.
+
+- invest: the total renovation investment costs
+- Kosten_ges: The assessement considers then heat losses after 20 years of usage for each insulation material
+- Kij | Kosten_material: the cost for each renovation measure j and building element i
+- n | rows | number of data inputs | df.shape[0]: total number of building elements
+- m | options: the maximum count of measures over all building elements for a normalized problem Here is an explenation:
+
+  Mathematical problem:
+
+  - Set E = {E1, E2, ..., En} and each building element Ei has Mij as a set of its possible renovation measures, for i in [1, ..., n] and j in [1, ..., m]</br>
+  - In the example given in the image:</br>
+
+    - n = 4
+    - E = {"Window", "Ceiling", "Roof", "Wall"}
+    - M1 = {"Single-Glazed Window", "Double glazed window"}
+    - M2 = {"Mineral wool", "Spray foam", "Rigid foam boards", "Cellulose", "Sheep wool"}
+    - M3 = {"Structural insulated panels", "Foam board", "Rigid foam"}
+    - M4 = {"Blanket: batts and rolls", "Concrete blocks insulation", "Insulating concrete forms (ICFs)", "Foam board or rigid foam", "Reflective system"}</br>
+
+  Normalized problem:
+
+  - In the programming code, we normalize the sets Mij for all i values in [1, ..., n], the set Mij could be written Mim and the above mentioned example becomes:
+    - n = 4, m = 5
+    - E = {"Window", "Ceiling", "Roof", "Wall"}
+    - M15 = {"", "", "", "Single-Glazed Window", "Double glazed window"}
+    - M25 = {"Mineral wool", "Spray foam", "Rigid foam boards", "Cellulose", "Sheep wool"}
+    - M35 = {"", "", "Structural insulated panels", "Foam board", "Rigid foam"}
+    - M45 = {"Blanket: batts and rolls", "Concrete blocks insulation", "Insulating concrete forms (ICFs)", "Foam board or rigid foam", "Reflective system"}
+  - Note that, the measure "" in each set measures means that no measure could be taken, so the costs are taken in the algorithm 0.0 price unit (price unit: €, $, ... etc.). The costs' sets could be then written for example:
+    - K15 = [0.0, 0.0, 0.0, 10, 13]
+    - K25 = [45, 56, 67, 18, 19]
+    - K35 = [0.0, 0.0, 32.5, 16, 11]
+    - K45 = [93, 34, 45, 95, 23]
 
 ## Study case
 
