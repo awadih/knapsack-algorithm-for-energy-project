@@ -6,7 +6,7 @@ The developement & application of this greedy algorithm have raised as I had the
 
 ## Objective
 An energy consultant assesses the building insulation, sets the requirements, but he/she has many insulation materials for each building component, which responds to the energetic requirements, namely the heating load. But, the performace of each insulation material reduces over time (the rate of depreciation). A well thoughtful choice for each building component should be proactive.
-Therefore, I reformulate the objective as to gain the maximum insulation, e.g. minimum heat loss costs, for the whole building while investing a given money amount.
+Therefore, I reformulate the objective as to gain the maximum insulation, e.g. minimum heat loss costs, for the whole building while investing the maximum of a given money amount.
 
 ## Conditions
 - To take into account the rate of depreciation, I set hereafter the lifespan of the building renovation project with 20 years. The assessement considers then heat losses after 20 years of usage for each insulation material. On the other hand, many other factors such as the varying price of the insulation material in the markt, I give with this code an automated solution to possible biases.
