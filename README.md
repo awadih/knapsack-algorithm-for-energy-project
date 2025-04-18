@@ -60,7 +60,7 @@ The deduction of the values of Hlc for each insulation material and building com
 The problem is solved as follows:
 - as
 - Minimize the product "heat loss costs" (Hij) times "material costs" (Kij) for each building component and insulation material:
-$$\min_{i \in [1, n], j \in [1, m]} H_{ij}*K_{ij}$$
+$$\LARGE\min_{i \in [1, n], j \in [1, m]} H_{ij}*K_{ij}$$
 
 
 ## Credits
