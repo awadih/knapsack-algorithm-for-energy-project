@@ -17,7 +17,7 @@ Therefore, I reformulate the objective as to gain the maximum insulation, e.g. m
 For explenation purpose, I use both signs [] and {} with combined definitions in logics in Math and the programming language Python.
 
 - invest: the total renovation investment costs
-- Kosten_ges: The assessement considers then heat losses after 20 years of usage for each insulation material
+- Kosten_ges | Wärmeverlust_kosten: heat loss costs for each insulation material after 20 years of usage
 - Kij | Kosten_material: the cost for each renovation measure j and building element i
 - n | rows | number of data inputs | df.shape[0]: total number of building elements
 - m | options: the maximum count of measures over all building elements for a normalized problem Here is an explenation:
