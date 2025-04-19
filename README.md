@@ -80,3 +80,4 @@ The main steps are:
 
 ## Credits
 
+Credits goes to [algodaily](https://algodaily.com/) for their lessons' webpage in fractional knapsack problem.
