@@ -74,7 +74,7 @@ To explain the resolution of the problem, I refer to the basics of the fractiona
 The main steps are:
 - Step 1: create a Pandas dataframe
 - Step 2: loop over the set of building elements (e) and find for each element the minimum of the product Hejx Kej for each building component and insulation material:
-  $$Min_{e}$$ = $$\LARGE\min_{j \in [1, m]} H_{ej}*K_{ej}$$
+  $$\LARGE\min_{e}$$ = $$\LARGE\min_{j \in [1, m]} H_{ej}*K_{ej}$$
 - Step 3: sort & reorder the building elements in an ascending order of the values Min_{e} for e in [1, n].
 - Step 4: invest Inv as per the above found ascending order.
 
