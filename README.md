@@ -65,11 +65,9 @@ The deduction, as per the picture above, gives the following:
 - U-value ================== DIN 12831 ======================> Hij
 - Cost for each i building element and j renovation material = Kij
 
-#### Analogy: fractional knapsack algorithm
+### Analogy: fractional knapsack algorithm
 
-To explain the resolution of the problem, I refer to the basics of the fractional knapsack algorithm in the following [Webpage](https://algodaily.com/lessons/getting-to-know-greedy-algorithms-through-examples/fractional-knapsack-problem).
-
-The programmed solution calculates value x weight for each building element, which is in my case the product "heat loss costs" times "material costs" (Kej). The main steps are:
+To explain the resolution of the problem, I refer to the basics of the fractional knapsack algorithm in the following [Webpage](https://algodaily.com/lessons/getting-to-know-greedy-algorithms-through-examples/fractional-knapsack-problem). The programmed solution calculates value x weight for each building element, which is in my case the product "heat loss costs" times "material costs" (Kej). The main steps are:
 - Step 1: create a Pandas dataframe
 - Step 2: loop over the set of building elements (e) and find for each element the minimum of the product Hejx Kej for each building component and insulation material:
   Min_{e} = $$\LARGE\min_{j \in [1, m]} H_{ej}*K_{ej}$$
