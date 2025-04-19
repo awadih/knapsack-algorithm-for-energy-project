@@ -11,6 +11,7 @@ Therefore, I reformulate the objective as to gain the maximum insulation, e.g. m
 ## Conditions
 - Condition 1: to take into account the rate of depreciation, I set hereafter the lifespan of the building renovation project with 20 years. The assessement considers then heat losses after 20 years of usage for each insulation material.
 - Condition 2: the renovation of a building element can be left out, limitation either due to no sufficient investment amount or because the impact of leaving the building element without any renovation is irrelevant. In the code, we can have as a result: (number of renovated elements) counter < (total number of building elements) df.shape[0]
+
 On the other hand, many other factors such as the varying price of the insulation material in the markt, I give with this code an automated solution to possible biases.
 
 ## Nomenclature
