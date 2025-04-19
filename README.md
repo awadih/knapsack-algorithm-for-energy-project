@@ -1,5 +1,5 @@
 # knapsack-algorithm-for-energy-project
-knapsack algorithm for optimizing energy renovation project
+fractional knapsack algorithm for optimizing energy renovation project
 
 ## Context
 The developement & application of this greedy algorithm have raised as I had the task to suggest restoration measures for buildings at the [Amperias GmbH](https://www.amperias.com/) company in Germany. The calculation method of the heat load is according to the standard [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587). In the course of this calculation, for each building structure component, such as walls, roofs, etc., an insulation material has been chosen from a set of choices.
@@ -65,13 +65,16 @@ The deduction, as per the picture above, gives the following:
 - U-value ================== DIN 12831 ======================> Hij
 - Cost for each i building element and j renovation material = Kij
 
-The problem is solved as follows:
-- Create a Pandas dataframe
-- Loop over the set of building elements (e) and find for each element the minimum of the product "heat loss costs" (Hej) times "material costs" (Kej) for each building component and insulation material:
-  Min_{e} = $$\LARGE\min_{j \in [1, m]} H_{ej}*K_{ej}$$
-- Reorder the building elements in an ascending order of the values Min_{e} for e in [1, n].
-- Invest Inv as per the above found ascending order.
+#### Analogy: fractional knapsack algorithm
 
+To explain the resolution of the problem, I refer to the basics of the fractional knapsack algorithm in the following [Webpage](https://algodaily.com/lessons/getting-to-know-greedy-algorithms-through-examples/fractional-knapsack-problem).
+
+The programmed solution calculates value x weight for each building element, which is in my case the product "heat loss costs" times "material costs" (Kej). The main steps are:
+- Step 1: create a Pandas dataframe
+- Step 2: loop over the set of building elements (e) and find for each element the minimum of the product Hejx Kej for each building component and insulation material:
+  Min_{e} = $$\LARGE\min_{j \in [1, m]} H_{ej}*K_{ej}$$
+- Step 3: sort & reorder the building elements in an ascending order of the values Min_{e} for e in [1, n].
+- Step 4: invest Inv as per the above found ascending order.
 
 ## Credits
 
