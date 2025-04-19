@@ -2,7 +2,7 @@
 fractional knapsack algorithm for optimizing energy renovation project
 
 ## Context
-The developement & application of this greedy algorithm have raised as I had the task to suggest restoration measures for buildings at the [Amperias GmbH](https://www.amperias.com/) company in Germany. The calculation method of the heat load is according to the standard [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587). In the course of this calculation, for each building structure component, such as walls, roofs, etc., an insulation material has been chosen from a set of choices.
+The developement & application of this greedy algorithm have raised as I had the task to suggest restoration measures for buildings at the amperias GmbH company in Germany. The calculation method of the heat load is according to the standard [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587). In the course of this calculation, for each building structure component, such as walls, roofs, etc., an insulation material has been chosen from a set of choices.
 
 ## Objective
 An energy consultant assesses the building insulation, sets the requirements, but he/she has many insulation materials for each building component, which responds to the energetic requirements, namely the heating load. But, the performace of each insulation material reduces over time (the rate of depreciation). A well thoughtful choice for each building component should be proactive.
