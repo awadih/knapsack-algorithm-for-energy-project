@@ -59,7 +59,9 @@ To grafically present the problem, here is an example of possible measures for a
 
 ![Renovation project - Presentation example with four building components](<resources/renovation for a building - diagram.jpg>)
 
-The deduction of the values of Hlc for each insulation material and building component can be done after heat loss calculations with the norm [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587).
+The deduction of the values of Hij for each insulation material and building component can be done after heat loss calculations with the norm [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587).
+
+U-value ============ DIN 12831 =================> Hij
 
 The problem is solved as follows:
 - Create a Pandas dataframe
