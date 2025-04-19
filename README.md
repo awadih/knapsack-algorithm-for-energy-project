@@ -69,7 +69,7 @@ The deduction, as per the picture above, gives the following:
 
 To explain the resolution of the problem, I refer to the basics of the fractional knapsack algorithm in the following [Webpage](https://algodaily.com/lessons/getting-to-know-greedy-algorithms-through-examples/fractional-knapsack-problem). The programmed solution calculates value x weight for each building element, which is in my case the product "heat loss costs" times "material costs" (Kej). 
 
-
+![Example of a fractional knapsack problem](<resources/Fractional Knapsack Problem.png>)
 
 The main steps are:
 - Step 1: create a Pandas dataframe
