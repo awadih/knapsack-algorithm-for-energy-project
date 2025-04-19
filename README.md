@@ -61,7 +61,9 @@ To grafically present the problem, here is an example of possible measures for a
 
 The deduction of the values of Hij for each insulation material and building component can be done after heat loss calculations with the norm [DIN 12831](https://www.din.de/de/mitwirken/normenausschuesse/nhrs/veroeffentlichungen/wdc-beuth:din21:261292587).
 
-U-value ============ DIN 12831 =================> Hij
+The deduction, as per the picture above, gives the following:
+- U-value ================== DIN 12831 ======================> Hij
+- Cost for each i building element and j renovation material = Kij
 
 The problem is solved as follows:
 - Create a Pandas dataframe
