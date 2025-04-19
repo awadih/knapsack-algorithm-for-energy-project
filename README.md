@@ -20,7 +20,9 @@ For explenation purpose, I use both signs [] and {} with combined definitions in
 - Hij: heat loss costs for each insulation material after 20 years of usage for each renovation measure j and building element i (In German: Wärmeverlustkosten)
 - Kij: the material costs for each renovation measure j and building element i (Materialkosten)
 - n: total number of building elements
-- m: the maximum count of measures over all building elements for a normalized problem Here is an explenation:
+- m: the maximum count of measures over all building elements for a normalized problem
+- e: the index of the building element in the algorithm
+Here is an explenation:
 
   Mathematical problem:
 
